@@ -1,0 +1,13 @@
+.text{
+  background: -webkit-linear-gradient(#eee,#333);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+/*  border:1px solid black;*/
+
+}
+.home{
+  /* background-image: linear-gradient(to bottom right,red,yellow); */
+  background: linear-gradient(#180394,#d14da5);
+/*  top:300px;
+  max-height: 300px;*/
+}

@@ -1,0 +1,80 @@
+/* Styling the table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling the table header */
+.table thead th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Styling the table body */
+.table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Alternate row background color */
+.table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Hover effect */
+.table tbody tr:hover {
+  background-color: #e0e0e0;
+}
+
+/* Add borders to the table */
+.table th,
+.table td {
+  border: 1px solid #ccc;
+}
+
+/* Responsive styles for small screens */
+@media only screen and (max-width: 600px) {
+  .table {
+    font-size: 14px;
+  }
+
+  .table thead th,
+  .table tbody td {
+    padding: 8px;
+  }
+
+  .table thead th {
+    font-size: 16px;
+  }
+
+  /* Hide table header on small screens */
+  .table thead {
+    display: none;
+  }
+
+  /* Display table rows as blocks for small screens */
+  .table tbody,
+  .table tbody tr,
+  .table tbody td {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* Add spacing between table cells on small screens */
+  .table tbody td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+  }
+
+  /* Add bottom border to the last table cell on small screens */
+  .table tbody td:last-child {
+    border-bottom: none;
+  }
+}
